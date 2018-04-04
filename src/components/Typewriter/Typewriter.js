@@ -18,7 +18,7 @@ export class Typewriter extends React.Component {
 
 	render() {
 		const typewriter = (
-			<span className={this.props.className}>
+			<div className={this.props.className}>
 				<Typist
 					className="typist"
 					startDelay={this.state.counter === 0 ? 1500 : 0}
@@ -36,7 +36,7 @@ export class Typewriter extends React.Component {
 						);
 					})}
 				</Typist>{' '}
-			</span>
+			</div>
 		);
 
 		return this.state.typing ? typewriter : null;
